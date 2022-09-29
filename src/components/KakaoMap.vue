@@ -1,13 +1,5 @@
 <template>
-    <!-- <div>
-      <div id="map"></div>
-      <div class="button-group d-flex">
-        <v-text-field id="keyword" v-model="keyword"> </v-text-field>
-        <v-btn @click="changeSize()">Hide</v-btn >
-      </div>
-    </div>
-  
-   -->
+
   
   
     <div class="map_wrap">
@@ -111,7 +103,6 @@
       infowindow.open(this.map, marker);
   
       kakao.maps.event.addListener(infowindow, 'click', () => {
-          //마커 position을 출력합니다.
           console.log("works");
       });
   
